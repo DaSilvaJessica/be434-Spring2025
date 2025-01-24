@@ -1,4 +1,4 @@
-../bin/grader.py -d 01_howdy
+~/workspace/bin/grader.py -d 01_howdy
 #../bin/grader.py -d 02_divide
 #../bin/grader.py -d 03_dna
 #../bin/grader.py -d 04_revc

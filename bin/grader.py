@@ -28,16 +28,14 @@ def get_args():
                         metavar='str',
                         type=str,
                         nargs='+',
-                        default='01_salutations')
+                        default='01_howdy')
 
     parser.add_argument('-r',
                         '--repo_dir',
                         help='"biosys-analytics code" directory',
                         metavar='str',
                         type=str,
-                        default=os.path.join(os.getenv('HOME'), 'work',
-                                             'be434',
-                                             'code'))
+                        default=os.path.join('/home/runner/workspace/assignments'))
 
     parser.add_argument('-s',
                         '--students_dir',
