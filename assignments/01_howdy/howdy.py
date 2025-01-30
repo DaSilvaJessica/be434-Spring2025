@@ -7,8 +7,6 @@ Purpose: Print greeting
 
 import argparse
 
-# make some changes here to see if we can push
-
 
 # --------------------------------------------------
 def get_args():
