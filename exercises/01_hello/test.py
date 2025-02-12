@@ -44,7 +44,7 @@ def test_usage():
 def test_input():
     """test for input"""
 
-    for val in ['Universe', 'Multiverse']:
+    for val in ['Universe', 'Multiverse', 'Bonnie']:
         for option in ['-n', '--name']:
             rv, out = getstatusoutput(f'{prg} {option} {val}')
             assert rv == 0
