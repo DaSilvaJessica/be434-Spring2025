@@ -2,7 +2,7 @@
 """
 Author : Bonnie
 Date   : 2025-02-12
-Purpose: Print greeting
+Purpose: say hello
 """
 
 import argparse
@@ -13,8 +13,8 @@ def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description="Print greeting",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description="say hello", 
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
 
     parser.add_argument(
@@ -36,10 +36,9 @@ def get_args():
     )
 
     parser.add_argument(
-        "-e",
-        "--excited",
-        help="If this flag is used, then print !",
-        action="store_true",
+        "-e", "--excited", 
+        help="Print ! if this flag is present", 
+        action="store_true"
     )
 
     return parser.parse_args()
@@ -53,13 +52,10 @@ def main():
     greeting = args.greeting
     name = args.name
     excited = args.excited
-    phrase = ""
     if excited:
-        phrase = f"{greeting}, {name}!"
+        print(f"{greeting}, {name}!")
     else:
-        phrase = f"{greeting}, {name}."
-
-    print(phrase)
+        print(f"{greeting}, {name}.")
 
 
 # --------------------------------------------------
