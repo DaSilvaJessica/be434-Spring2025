@@ -1,8 +1,8 @@
 modules = ["python-3.12", "bash"]
-run = "~/workspace/assignments/grade_hw.sh"
+run = "~/workspace/assignments/01_howdy/grade.sh"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "~/workspace/assignments/grade_hw.sh"]
+run = ["sh", "-c", "~/workspace/assignments/grade.sh"]
