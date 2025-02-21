@@ -5,4 +5,4 @@ run = "~/workspace/assignments/01_howdy/grade.sh"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "~/workspace/assignments/grade.sh"]
+run = ["sh", "-c", "~/workspace/assignments/01_howdy/grade.sh"]
